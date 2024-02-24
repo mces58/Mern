@@ -31,7 +31,7 @@ module.exports = {
       'error',
       { commonjs: true, caseSensitive: true, ignore: ['@src'] },
     ],
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['error', 'only-multiline'],
     'arrow-body-style': ['error', 'always'],
     'implicit-arrow-linebreak': ['error', 'below'],
     'no-tabs': 'error',
