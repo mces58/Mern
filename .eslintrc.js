@@ -36,5 +36,17 @@ module.exports = {
     'implicit-arrow-linebreak': ['error', 'below'],
     'no-tabs': 'error',
     'no-unused-vars': ['error', { vars: 'all', args: 'none', ignoreRestSiblings: false }],
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: { consistent: true },
+        ObjectPattern: { consistent: true },
+        ImportDeclaration: { consistent: true },
+        ExportDeclaration: { consistent: true },
+      },
+    ],
+    'operator-linebreak': ['error', 'after'],
+    'nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
   },
 };
