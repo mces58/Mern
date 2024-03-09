@@ -1,10 +1,13 @@
 const express = require('express');
 const startApp = require('@src/app');
+const { logger } = require('@src/utils');
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 startApp(app);
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(PORT, () => {
+  logger.log('info', `Server is running on port ${PORT}`);
 });
