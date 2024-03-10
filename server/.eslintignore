@@ -3,5 +3,4 @@ dist
 build
 package-lock.json
 README.md
-.gitignore
 .env

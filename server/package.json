@@ -9,7 +9,11 @@
     "start:webpack": "node build/bundle.js",
     "build:babel": "babel src --out-dir dist --copy-files --ignore node_modules,build --source-maps inline",
     "start:babel": "node dist/server.js",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "keywords": [
     "nodejs",
@@ -20,7 +24,9 @@
     "bcrypt",
     "cors",
     "dotenv",
-    "nodemon"
+    "nodemon",
+    "eslint",
+    "prettier"
   ],
   "author": "",
   "license": "ISC",
@@ -49,7 +55,11 @@
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4"
   }
