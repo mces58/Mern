@@ -1,10 +1,17 @@
 import React from 'react';
 
+import { Button, Alert as MuiAlert } from '@mui/material';
+
 function Alert() {
   return (
-    <div className="bg-orange-600" role="alert">
-      Alert!
-    </div>
+    <>
+      <MuiAlert severity="warning" elevation={6} variant="filled">
+        This is an error alert — check it out!
+      </MuiAlert>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
+    </>
   );
 }
 

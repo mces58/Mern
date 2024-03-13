@@ -25,6 +25,7 @@ module.exports = {
     'linebreak-style': ['error', 'windows'],
     'arrow-body-style': ['error', 'always'],
     'import/no-unresolved': ['error', { ignore: ['^src/'] }],
+    'import/no-extraneous-dependencies': 'off',
     'import/order': [
       'error',
       {
@@ -37,6 +38,11 @@ module.exports = {
           caseInsensitive: true,
         },
         pathGroups: [
+          {
+            pattern: 'react',
+            group: 'external',
+            position: 'before',
+          },
           {
             pattern: '<THIRD_PARTY_MODULES>',
             group: 'external',
