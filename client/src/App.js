@@ -1,16 +1,29 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Alert from 'src/components/Alert';
-import Login from 'src/pages/Login';
+import Detail from 'src/pages/detail/Detail';
+import Error from 'src/pages/error/NotFound';
+import Home from 'src/pages/home/Home';
+import Login from 'src/pages/login/Login';
 
 function App() {
-  return (
-    <div className="underline">
-      <h1>App</h1>
-      <Login />
-      <Alert />
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+      errorElement: <Error />,
+    },
+    {
+      path: '/login',
+      element: <Login />,
+    },
+    {
+      path: '/detail',
+      element: <Detail />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

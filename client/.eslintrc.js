@@ -26,6 +26,7 @@ module.exports = {
     'arrow-body-style': ['error', 'always'],
     'import/no-unresolved': ['error', { ignore: ['^src/'] }],
     'import/no-extraneous-dependencies': 'off',
+    'no-console': ['error', { allow: ['log'] }],
     'import/order': [
       'error',
       {
