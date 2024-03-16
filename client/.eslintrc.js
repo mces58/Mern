@@ -27,6 +27,7 @@ module.exports = {
     'import/no-unresolved': ['error', { ignore: ['^src/'] }],
     'import/no-extraneous-dependencies': 'off',
     'no-console': ['error', { allow: ['log'] }],
+    'comma-dangle': ['error', 'only-multiline'],
     'import/order': [
       'error',
       {
